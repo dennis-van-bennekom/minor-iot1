@@ -1,8 +1,10 @@
+// Include libraries
 #include <EIoTCloudRestApi.h>
 #include <EIoTCloudRestApiConfig.h>
 #include <ThingSpeak.h>
 #include <ESP8266WiFi.h>
 
+// Wifi Setup
 const char* ssid = "jeinternet";
 const char* pass = "supergeheim";
 WiFiClient client;
@@ -16,9 +18,9 @@ const char* parameter2 = "5707983bc943a022c0d2c42b/FNuCL2fjdscKSz5y";
 unsigned long channel = 106886;
 const char* api_key = "YAANEN39DKRFCW56";
 
+// Variables
 const int ldr = A0;
 int ldrValue = 0;
-
 const int pir = D5;
 int pirValue = 0;
 
